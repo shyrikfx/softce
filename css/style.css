@@ -1,0 +1,610 @@
+/* line 5, ../../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 1, ../scss/_main.scss */
+body {
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  background: url(../img/bg.jpg) no-repeat center center fixed;
+  background-size: cover;
+}
+
+/* line 7, ../scss/_main.scss */
+.wr {
+  margin: 0 auto;
+  width: 820px;
+}
+
+/* line 11, ../scss/_main.scss */
+.button {
+  padding: 11px 32px;
+  border: solid 1px #004F72;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  font: 18px Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: #E5FFFF;
+  background-color: #3BA4C7;
+  background-image: -moz-linear-gradient(top, #3BA4C7 0%, #1982A5 100%);
+  background-image: -webkit-linear-gradient(top, #3BA4C7 0%, #1982A5 100%);
+  background-image: -o-linear-gradient(top, #3BA4C7 0%, #1982A5 100%);
+  background-image: -ms-linear-gradient(top, #3BA4C7 0%, #1982A5 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1982A5', endColorstr='#1982A5',GradientType=0 );
+  background-image: linear-gradient(to bottom, #3ba4c7 0%, #1982a5 100%);
+  -webkit-box-shadow: 0px 0px 2px #bababa, inset 0px 0px 1px #ffffff;
+  -moz-box-shadow: 0px 0px 2px #bababa,  inset 0px 0px 1px #ffffff;
+  box-shadow: 0px 0px 2px #bababa, inset 0px 0px 1px #ffffff;
+}
+
+@media only screen and (max-width: 759px) {
+  /* line 32, ../scss/_main.scss */
+  body {
+    min-width: 360px;
+    height: 100vh;
+  }
+
+  /* line 36, ../scss/_main.scss */
+  .wr {
+    width: 100%;
+  }
+}
+/* line 1, ../scss/_bg-block.scss */
+.bg-block {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -100px;
+  margin-left: -250px;
+  width: 500px;
+  height: 200px;
+  border: 1px solid #000;
+  border-radius: 3px;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.75);
+  opacity: .9;
+  text-align: center;
+}
+/* line 18, ../scss/_bg-block.scss */
+.bg-block.opened {
+  display: block;
+}
+/* line 21, ../scss/_bg-block.scss */
+.bg-block.close {
+  display: none;
+}
+
+@media only screen and (max-width: 760px) {
+  /* line 26, ../scss/_bg-block.scss */
+  .bg-block {
+    width: 320px;
+    margin-left: -160px;
+  }
+}
+/* line 1, ../scss/_first_slide.scss */
+.block {
+  margin-left: -92px;
+  position: relative;
+  width: 320px;
+  box-sizing: border-box;
+  transform-origin: 100% 0;
+  transform: rotate(-45deg);
+  transition: .3s;
+}
+/* line 9, ../scss/_first_slide.scss */
+.block .big-block {
+  box-sizing: border-box;
+  overflow: hidden;
+  float: left;
+  margin: 10px;
+  width: 300px;
+  height: 300px;
+  border: 1px solid #fff;
+  background: #2180ED;
+}
+/* line 18, ../scss/_first_slide.scss */
+.block .big-block > span {
+  position: absolute;
+  top: 130px;
+  left: 70px;
+  transform: rotate(45deg);
+  font-size: 32px;
+  color: #fff;
+}
+/* line 26, ../scss/_first_slide.scss */
+.block .big-block img {
+  position: relative;
+  top: -425px;
+  left: -300px;
+  height: 142%;
+  transform-origin: 0 100%;
+  transform: rotate(45deg);
+}
+/* line 35, ../scss/_first_slide.scss */
+.block .small-block {
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+  float: left;
+  margin: 10px;
+  width: 140px;
+  height: 140px;
+  border: 1px solid #fff;
+  background: #2180ED;
+}
+/* line 45, ../scss/_first_slide.scss */
+.block .small-block .link-to-form {
+  position: absolute;
+  bottom: 70px;
+  left: 30px;
+  display: inline-block;
+  transform: rotate(45deg);
+  color: #fff;
+}
+/* line 53, ../scss/_first_slide.scss */
+.block .small-block img {
+  position: relative;
+  left: -140px;
+  bottom: 45px;
+  height: 200%;
+  transform: rotate(45deg);
+}
+/* line 61, ../scss/_first_slide.scss */
+.block .last-line {
+  transition: 1s;
+  transform: translateX(160px);
+}
+/* line 65, ../scss/_first_slide.scss */
+.block:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+/* line 72, ../scss/_first_slide.scss */
+.block.close {
+  display: none;
+}
+/* line 75, ../scss/_first_slide.scss */
+.block.opened {
+  display: block;
+}
+
+@media only screen and (max-width: 760px) {
+  /* line 82, ../scss/_first_slide.scss */
+  .block {
+    margin: 0 auto;
+    transform: none;
+  }
+  /* line 86, ../scss/_first_slide.scss */
+  .block .big-block > img {
+    top: -100px;
+    transform: none;
+  }
+  /* line 90, ../scss/_first_slide.scss */
+  .block .big-block > span {
+    top: 130px;
+    left: 55px;
+    transform: none;
+  }
+  /* line 97, ../scss/_first_slide.scss */
+  .block .small-block img {
+    height: 155%;
+    transform: none;
+  }
+  /* line 102, ../scss/_first_slide.scss */
+  .block .last-line {
+    transform: none;
+  }
+  /* line 104, ../scss/_first_slide.scss */
+  .block .last-line .link-to-form {
+    transform: none;
+  }
+}
+/* line 1, ../scss/_form.scss */
+.form {
+  display: none;
+  margin: 40px auto;
+  width: 400px;
+}
+/* line 5, ../scss/_form.scss */
+.form p {
+  color: #777;
+  margin-bottom: 14px;
+}
+/* line 8, ../scss/_form.scss */
+.form p:last-child {
+  margin-bottom: 0;
+}
+/* line 11, ../scss/_form.scss */
+.form p input {
+  width: 250px;
+  padding: 10px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+/* line 19, ../scss/_form.scss */
+.form input[type="email"],
+.form input[type="password"] {
+  background-color: #eee;
+  color: #777;
+  padding: 4px 10px;
+  width: 328px;
+}
+/* line 26, ../scss/_form.scss */
+.form input[type="submit"] {
+  background-color: #b1b1b1;
+  color: #fff;
+  display: block;
+  margin: 0 auto;
+  padding: 4px 0;
+  width: 100px;
+  cursor: pointer;
+}
+/* line 35, ../scss/_form.scss */
+.form.opened {
+  display: block;
+}
+/* line 38, ../scss/_form.scss */
+.form.close {
+  display: none;
+}
+
+@media only screen and (max-width: 760px) {
+  /* line 43, ../scss/_form.scss */
+  .form {
+    width: 300px;
+  }
+}
+/* line 1, ../scss/_loading.scss */
+.loading {
+  display: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+/* line 5, ../scss/_loading.scss */
+.loading.opened {
+  display: block;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/* line 15, ../scss/_loading.scss */
+.cssload-wrap {
+  padding-top: 38px;
+}
+
+/* line 19, ../scss/_loading.scss */
+.cssload-wrap > div {
+  left: calc(50% - 65px);
+  position: relative;
+  background-color: white;
+  width: 130px;
+  height: 130px;
+  border-radius: 100%;
+  -o-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  overflow: hidden;
+  color: black;
+}
+
+/* line 33, ../scss/_loading.scss */
+.cssload-wrap > div:nth-child(2) {
+  width: 100px;
+  height: 100px;
+  top: -115px;
+  left: calc(50% - 50px);
+  line-height: 100px;
+  text-align: center;
+}
+
+/* line 41, ../scss/_loading.scss */
+.cssload-wrap > div div {
+  width: 146px;
+  height: 146px;
+  border-radius: 100%;
+  -o-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  filter: blur(29px);
+  -o-filter: blur(29px);
+  -ms-filter: blur(29px);
+  -webkit-filter: blur(29px);
+  -moz-filter: blur(29px);
+  position: absolute;
+}
+
+/* line 56, ../scss/_loading.scss */
+.cssload-wrap > div div:nth-child(1) {
+  background-color: #ff7373;
+  animation: cssload-move 4.6s;
+  -o-animation: cssload-move 4.6s;
+  -ms-animation: cssload-move 4.6s;
+  -webkit-animation: cssload-move 4.6s;
+  -moz-animation: cssload-move 4.6s;
+  animation-delay: 5.52s;
+  -o-animation-delay: 5.52s;
+  -ms-animation-delay: 5.52s;
+  -webkit-animation-delay: 5.52s;
+  -moz-animation-delay: 5.52s;
+  animation-iteration-count: infinite;
+  -o-animation-iteration-count: infinite;
+  -ms-animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  -o-animation-timing-function: linear;
+  -ms-animation-timing-function: linear;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+}
+
+/* line 79, ../scss/_loading.scss */
+.cssload-wrap > div div:nth-child(2) {
+  background-color: #9c1515;
+  animation: cssload-move 3.45s;
+  -o-animation: cssload-move 3.45s;
+  -ms-animation: cssload-move 3.45s;
+  -webkit-animation: cssload-move 3.45s;
+  -moz-animation: cssload-move 3.45s;
+  animation-delay: 0s;
+  -o-animation-delay: 0s;
+  -ms-animation-delay: 0s;
+  -webkit-animation-delay: 0s;
+  -moz-animation-delay: 0s;
+  animation-iteration-count: infinite;
+  -o-animation-iteration-count: infinite;
+  -ms-animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  -o-animation-timing-function: linear;
+  -ms-animation-timing-function: linear;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+}
+
+/* line 102, ../scss/_loading.scss */
+.cssload-wrap > div div:nth-child(3) {
+  background-color: #a41717;
+  animation: cssload-move 6.9s;
+  -o-animation: cssload-move 6.9s;
+  -ms-animation: cssload-move 6.9s;
+  -webkit-animation: cssload-move 6.9s;
+  -moz-animation: cssload-move 6.9s;
+  animation-delay: 3.68s;
+  -o-animation-delay: 3.68s;
+  -ms-animation-delay: 3.68s;
+  -webkit-animation-delay: 3.68s;
+  -moz-animation-delay: 3.68s;
+  animation-iteration-count: infinite;
+  -o-animation-iteration-count: infinite;
+  -ms-animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  -o-animation-timing-function: linear;
+  -ms-animation-timing-function: linear;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+}
+
+/* line 125, ../scss/_loading.scss */
+.cssload-wrap > div div:nth-child(4) {
+  background-color: #400000;
+  animation: cssload-move 5.75s;
+  -o-animation: cssload-move 5.75s;
+  -ms-animation: cssload-move 5.75s;
+  -webkit-animation: cssload-move 5.75s;
+  -moz-animation: cssload-move 5.75s;
+  animation-delay: 1.84s;
+  -o-animation-delay: 1.84s;
+  -ms-animation-delay: 1.84s;
+  -webkit-animation-delay: 1.84s;
+  -moz-animation-delay: 1.84s;
+  animation-iteration-count: infinite;
+  -o-animation-iteration-count: infinite;
+  -ms-animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  -o-animation-timing-function: linear;
+  -ms-animation-timing-function: linear;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+}
+
+@keyframes cssload-move {
+  0%, 100% {
+    top: 0%;
+    left: 0%;
+  }
+  25% {
+    top: 0%;
+    left: 50%;
+  }
+  50% {
+    top: 50%;
+    left: 50%;
+  }
+  75% {
+    top: 50%;
+    left: 0%;
+  }
+}
+@-o-keyframes cssload-move {
+  0%, 100% {
+    top: 0%;
+    left: 0%;
+  }
+  25% {
+    top: 0%;
+    left: 50%;
+  }
+  50% {
+    top: 50%;
+    left: 50%;
+  }
+  75% {
+    top: 50%;
+    left: 0%;
+  }
+}
+@-ms-keyframes cssload-move {
+  0%, 100% {
+    top: 0%;
+    left: 0%;
+  }
+  25% {
+    top: 0%;
+    left: 50%;
+  }
+  50% {
+    top: 50%;
+    left: 50%;
+  }
+  75% {
+    top: 50%;
+    left: 0%;
+  }
+}
+@-webkit-keyframes cssload-move {
+  0%, 100% {
+    top: 0%;
+    left: 0%;
+  }
+  25% {
+    top: 0%;
+    left: 50%;
+  }
+  50% {
+    top: 50%;
+    left: 50%;
+  }
+  75% {
+    top: 50%;
+    left: 0%;
+  }
+}
+@-moz-keyframes cssload-move {
+  0%, 100% {
+    top: 0%;
+    left: 0%;
+  }
+  25% {
+    top: 0%;
+    left: 50%;
+  }
+  50% {
+    top: 50%;
+    left: 50%;
+  }
+  75% {
+    top: 50%;
+    left: 0%;
+  }
+}
+/* line 1, ../scss/_last-slide.scss */
+.last-slide {
+  display: none;
+  font-family: "HelveticaNeueCyr-Light", Arial, Helvetica, sans-serif;
+  font-size: 32px;
+}
+/* line 5, ../scss/_last-slide.scss */
+.last-slide span {
+  display: inline-block;
+  margin-top: 50px;
+}
+/* line 9, ../scss/_last-slide.scss */
+.last-slide .button {
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  margin-left: -70px;
+  text-decoration: none;
+  text-align: center;
+}
+/* line 17, ../scss/_last-slide.scss */
+.last-slide.opened {
+  display: block;
+}
+/* line 20, ../scss/_last-slide.scss */
+.last-slide.close {
+  display: none;
+}

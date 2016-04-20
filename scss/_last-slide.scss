@@ -1,0 +1,23 @@
+.last-slide {
+	display: none;
+	font-family: "HelveticaNeueCyr-Light", Arial, Helvetica, sans-serif;
+	font-size: 32px;
+	span {
+		display: inline-block;
+		margin-top: 50px;
+	}
+	.button{
+		position: absolute;
+		left: 50%;
+		bottom: 20px;
+		margin-left: -70px;
+		text-decoration:none; 
+		text-align:center; 
+	}
+	&.opened {
+		display: block;
+	}
+	&.close {
+		display: none;
+	}
+}

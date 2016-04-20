@@ -1,0 +1,46 @@
+.form {
+	display: none;
+	margin: 40px auto;
+	width: 400px;
+		p {
+			color: #777;
+			margin-bottom: 14px;
+			&:last-child {
+				margin-bottom: 0;
+			}
+			input {
+				width: 250px;
+				padding: 10px;
+				-webkit-border-radius: 3px;
+				-moz-border-radius: 3px;
+				border-radius: 3px;
+			}
+		}
+		input[type="email"],
+		input[type="password"] {
+			background-color: #eee;
+			color: #777;
+			padding: 4px 10px;
+			width: 328px;
+		}
+		input[type="submit"] {
+			background-color: #b1b1b1;
+			color: #fff;
+			display: block;
+			margin: 0 auto;
+			padding: 4px 0;
+			width: 100px;
+			cursor:pointer;
+		}
+	&.opened {
+		display: block;
+	}
+	&.close {
+		display: none;
+	}
+}
+@media only screen and (max-width: 760px) {
+	.form {
+		width: 300px;
+	}
+}
